@@ -2,15 +2,35 @@
 <title>CALCULADORA</title>
 
 <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#container{
+    /width: 70%;/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
 header{ 
-    background: black;
+    background:purple;
     height: 100px; 
     width: 100%;
-text-align: center;
+    margin: 0px;
+    text-align: center;
     line-height: 100px;
     color: white;
-nav{
-        background: red;
+    border-bottom: 3px dashed black;
+}
+    nav{
+        background: yellow;
         height: 50px;
         line-height: 30px;
         border-bottom: 1px solid black;
@@ -20,7 +40,22 @@ nav ul li {
     float: left;
     list-style: none;
     margin: 10px;
+
 }
+
+    .clearfix{
+        clear:both;
+    }
+
+
+
+#content{
+
+    float:left;
+    width:calc( 80% - 80px);
+    min-height: 500px;
+    background: brown;
+    padding: 40px;
 }
 .calculadora{
 	display:block;
